@@ -1,0 +1,193 @@
+.box{
+             position: absolute; 
+             top: 30%;
+             left: 10%;
+             background: rgba(0,0,0,.8);
+             width: 400px;
+             padding: 40px;
+             box-sizing: border-box;
+             border-radius: 10px;
+             box-shadow: 0 15px 15px rgba(0,0,0,.5)
+             
+         }
+         h2{
+             text-align: center;
+             margin: 0 0 30px;
+             padding: 0px;
+             color: white;
+         }
+         .box .inputbox{
+             position: relative;
+         }
+         .box .inputbox input{
+             width: 100%;
+             padding: 10px 0;
+             font-size: 16px;
+             color: white;
+             margin-bottom: 10px;
+             border: none;
+             outline: none;
+             background: transparent;
+             border-bottom: 1px solid white;
+         }
+         .box .inputbox label{
+             position: absolute;
+             top: 0;
+             left: 0;
+             padding: 10px 0;
+             font-size: 16px;
+             color: white;
+             pointer-events: none;
+             transition: .5s;
+         }
+         .box .inputbox input:focus~label,
+         .box .inputbox input:valid~label{
+             top:-20px;
+             left: 0;
+             color: deepskyblue;
+             font-size: 12px;
+         }
+         .box input[type="submit"]{
+             margin-top: 10px;
+             background: transparent;
+             border: none;
+             outline: none;
+             color: white;
+             background: deepskyblue;
+             padding: 10px 20px;
+             border-radius: 5px;
+             cursor: pointer;
+         }
+
+
+   .center{
+                position: absolute;
+                left: 50%;
+                top: 91%;
+                width: 100%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                
+            }
+            .btn{
+                display: inline-block;
+                width: 90px;
+                height: 90px;
+                background-color: gainsboro;
+                margin: 10px;
+                border-radius: 30%;
+                box-shadow: 0 5px 15px -5px red;
+                overflow: hidden;
+                position: relative;
+                color: red;
+                
+            }
+            .btn i{
+                font-size: 26px;
+                line-height: 90px;
+                transition: .2s linear;
+            }
+            .btn:hover i{
+                transform: scale(1.5);
+                color: white;
+            }
+            .btn::before{
+                content: "";
+                position: absolute;
+                width: 120%;
+                height: 120%;
+                background-color: magenta;
+                transform: rotate(45deg);
+                left: -110%;
+                top:90%;
+                
+            }
+            .btn:hover::before{
+                animation: aaa .9s 1;
+                top: -10%;
+                left: -10%;
+            }
+            @keyframes aaa{
+                0%{
+                    left: -110%;
+                    top:90%;
+                }
+                50%{
+                    left: 10%;
+                    top: -30%;
+                }
+                100%{
+                    left: -10%;
+                top:-10%;
+                }
+                
+            }
+    
+
+body{
+    background-color:dimgray;
+    
+
+    
+    
+}
+#h1{
+   
+}
+#div1{
+    font-family:fantasy;
+    font-size: 80px;
+    width:auto;
+    height:130px;
+    border:8px;
+    border-style:none;
+    background-image: url(title.png);
+    background-repeat: repeat-y;
+    background-blend-mode: hard-light;
+    text-align: center;
+    background-color:blueviolet;
+    
+    
+    
+}
+#div2{
+    background-image:url(doc.png);
+    height: 390px;
+    margin-top: 10px;
+    
+
+}
+#div3{
+    width: auto;;
+    height:100px;;
+    border:5px;
+    
+    background-color: dodgerblue;
+
+}
+#div4{
+    margin-left: 100px;
+    margin-top:10px;
+    background:white;
+    width:170px;
+    height:80px;
+    border:4px ;
+    border-style:inset;
+    border-color: black;
+    font-family: cursive;
+    font-size: 40px;
+    border-radius: 15px;
+    background-image: url(ADMIN%20LOGIN.jpg);
+    
+}
+#div5{
+    width:100px;
+    height:80px;
+    float:right;
+    border: 1px;
+    border-style: outset;
+    font-family: cursive;
+    font-size: 40px;
+    
+}
+
