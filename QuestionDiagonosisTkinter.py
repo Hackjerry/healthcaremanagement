@@ -266,7 +266,7 @@ class QuestionDigonosis(Frame):
         execute_bot()
         self.txtDigonosis.delete(0.0,END)
         self.txtQuestion.delete(0.0,END)
-        self.txtDigonosis.insert(END,"Please Click on Yes or No for the Above symptoms in Question")                  
+        self.txtDigonosis.insert(END,"Please Click on YES or NO for the Above symptoms in Question")                  
         QuestionDigonosis.objIter=recurse(0, 1)
         str1=QuestionDigonosis.objIter.__next__()
         self.txtQuestion.insert(END,str1+"\n")
